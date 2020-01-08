@@ -4,29 +4,34 @@ Nesse exercício, você está livre para escolher os nomes para suas variáveis 
 
 ```js
 // Crie uma função que receba dois argumentos e retorne a soma dos mesmos.
-?
+? function soma (x,y){
+    return x +y;
+}
 
 // Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando `5` ao resultado retornado da função.
-?
+? var somatorio = soma(1,2) + 5;
 
 // Qual o valor atualizado dessa variável?
-?
+? somatorio: 8;
 
 // Declare uma nova variável, sem valor.
-?
+? var repositorio;
 
 /*
 Crie uma função que adicione um valor à variável criada acima, e retorne a string:
     O valor da variável agora é VALOR.
 Onde VALOR é o novo valor da variável.
 */
-?
+? function atribuiRepositorio () {
+   repositorio = Math.floor(Math.random()*10);
+   return repositorio;
+}
 
 // Invoque a função criada acima.
-?
+? atribuiRepositorio();
 
 // Qual o retorno da função? (Use comentários de bloco).
-?
+? 4;
 
 /*
 Crie uma função com as seguintes características:
@@ -34,20 +39,27 @@ Crie uma função com as seguintes características:
 2. Se qualquer um dos três argumentos não estiverem preenchidos, a função deve retornar a string:
     Preencha todos os valores corretamente!
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
-*/
-?
+*/ 
+? function multiplicacao (x,y,z){
+   if ( (x == null || x == undefined) || (y == null || y == undefined) || (z == null || z == undefined) ) {
+        return "Preencha todos os campos!"
+   }
+    else {
+        return (x * y * z) + 2;
+    }
+}
 
 // Invoque a função criada acima, passando só dois números como argumento.
-?
+? multiplicacao (1,2);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+? "Preencha todos os campos!"
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
-?
+?  multiplicacao (1,2,3); 
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+? 8;
 
 /*
 Crie uma função com as seguintes características:
